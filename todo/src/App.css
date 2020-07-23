@@ -1,1 +1,27 @@
+body {
+  background: #222831;
+  color: #eee;
+}
 
+.app {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.item {
+  font-weight: bold;
+  font-size: 20px;
+  width: 300px;
+}
+
+.completed {
+  opacity: 0.75;
+}
+`
+.completed::after {
+  content:  '✓' 
+}
+
+.time {
+  color: #00adb5;
+}
