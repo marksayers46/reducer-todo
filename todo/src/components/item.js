@@ -1,5 +1,5 @@
 import React from 'react';
-import moment from 'moment';
+import moment from 'moment/moment.js';
 
 const Item = props => {
     let itemClassName = 'item';
@@ -16,7 +16,7 @@ const Item = props => {
         <div>
             <p>
                 <span className={itemClassName} onClick={handleClick} value={props.item.id}>{props.item.item} </span>
-                {props.item.completed === true ?  <span className='time'> Completed {moment().calendar()}</span> : null}
+                {props.item.completed === true ?  <span className='time'> Completed {moment().calendar()}</span> : null} 
             </p>
         </div>
     )
